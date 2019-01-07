@@ -6,5 +6,5 @@ import (
 )
 
 func GetPeople(w http.ResponseWriter, r *http.Request) {
-	json.NewEncoder(w).Encode([...]string{"Penn", "Teller"})
+	json.NewEncoder(w).Encode(FindPeople())
 }
